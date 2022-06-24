@@ -1,0 +1,10 @@
+.footer {
+  grid-row: 6 / 7;
+  grid-column: page-start / page-end;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: $color-primary;
+  background-color: #EDF0F5;
+}

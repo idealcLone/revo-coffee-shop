@@ -1,0 +1,21 @@
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: .8rem 3.3rem;
+  border: none;
+
+  &--primary {
+    background-color: $color-accent;
+    color: #fff;
+    border-radius: 1.9rem;
+
+    &:hover {
+      background-color: $color-accent-light;
+    }
+  }
+
+  &--secondary {
+    background-color: #fff;
+    color: $color-primary;
+  }
+}

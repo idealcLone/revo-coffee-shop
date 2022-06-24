@@ -1,0 +1,5 @@
+#root {
+  display: grid;
+  grid-template-columns: [page-start] .5fr [center-start] repeat(6, [col-start] 1fr [col-end]) [center-end] .5fr [page-end];
+  grid-template-rows: 100vh;
+}

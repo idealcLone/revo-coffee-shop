@@ -1,0 +1,61 @@
+.coffee {
+  position: relative;
+  grid-row: 3 / 4;
+  grid-column: page-start / page-end;
+  padding: 13rem 0 13rem 13rem;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 7rem;
+  }
+
+  &__side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25vw;
+    background-color: $color-primary;
+    z-index: -1;
+  }
+
+  &__items {
+    grid-column: page-start / page-end;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(2, 26rem);
+    grid-column-gap: 1rem;
+    grid-row-gap: 3rem;
+  }
+
+  &__card {
+    height: 100%;
+    display: flex;
+    box-shadow: 0 4px 24px 0 #CDCDCD80;
+    background-color: #fff;
+  }
+
+  &__body {
+    padding: 4rem 5rem 4rem 0;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      color: $color-accent;
+      margin-bottom: .8rem;
+    }
+  }
+
+  &__description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.6rem;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+}

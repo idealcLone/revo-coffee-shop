@@ -1,0 +1,43 @@
+.features {
+  grid-row: 2 / 3;
+  grid-column: center-start / center-end;
+  padding: 9rem 0 12rem;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__items {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 6rem;
+    justify-content: space-between;
+  }
+}
+
+.feature {
+  max-width: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__img {
+    width: 8rem;
+  }
+
+  &__name {
+    color: $color-gray-dark;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    color: $color-gray-dark;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+}

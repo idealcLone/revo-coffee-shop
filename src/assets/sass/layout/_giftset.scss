@@ -1,0 +1,120 @@
+.giftset {
+  grid-row: 4 / 5;
+  grid-column: page-start / page-end;
+  padding: 13rem;
+
+  &__heading {
+    margin-bottom: 7rem;
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-content: center;
+    align-items: center;
+  }
+
+  &__img-box {
+
+  }
+
+  &__img {
+    display: block;
+    max-width: 30vw;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    z-index: 1;
+  }
+
+  &__body {
+    grid-row: 1;
+    grid-column: 3 / span 9;
+    background-color: #fff;
+    box-shadow: 1px 0 10px 0 #CDCDCD80;
+    padding: 6.5rem 6.5rem 6.5rem 23rem;
+    display: grid;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: flex-start;
+
+    button {
+      grid-row: 5 / 6;
+    }
+  }
+
+  &__price {
+    color: $color-accent;
+    margin-bottom: 1.2rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+
+  &__name {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    margin-bottom: 1.2rem;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+
+  &__description-item {
+    grid-row: 4 / 5;
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 2rem;
+    align-items: center;
+    margin-bottom: 4.5rem;
+
+    img {
+      grid-row: 1 / -1;
+      grid-column: 1 / 2;
+    }
+
+    h5 {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+    }
+
+    p {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+    }
+  }
+
+  &__types {
+    grid-row: 1;
+    grid-column: 12 / 13;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__type {
+    flex: 1;
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 900;
+    font-family: $font-secondary;
+    color: $color-primary;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--2,
+    &--3 {
+      opacity: .3;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+  }
+}
