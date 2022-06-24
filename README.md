@@ -1,3 +1,3 @@
-# Boilerplate
+# Revo
 
-Boilerplate code for React with Webpack, TypeScript, and Pretiter
+Coffee shop landing
